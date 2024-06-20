@@ -9,6 +9,7 @@ public class CalculatorService {
         return "Добро пожаловать в калькулятор";
     }
 
+
     public String plus(@RequestParam("num1") int num1, @RequestParam("num2") int num2) {
         int additionResult = num1 + num2;
         return num1 + " + " + num2 + " = " + additionResult;
@@ -28,5 +29,4 @@ public class CalculatorService {
         int divideResult = num1 / num2;
         return num1 + " / " + num2 + " = " + divideResult;
     }
-
 }
